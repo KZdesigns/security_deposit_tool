@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Property name:</strong>
+  <%= @tenant.property_name %>
+</p>
+
+<p>
+  <strong>Unit name:</strong>
+  <%= @tenant.unit_name %>
+</p>
+
+<p>
+  <strong>Tenant name:</strong>
+  <%= @tenant.tenant_name %>
+</p>
+
+<p>
+  <strong>Security deposit amount:</strong>
+  <%= @tenant.security_deposit_amount %>
+</p>
+
+<p>
+  <strong>Security deposit type:</strong>
+  <%= @tenant.security_deposit_type %>
+</p>
+
+<%= link_to 'Edit', edit_tenant_path(@tenant) %> |
+<%= link_to 'Back to Tenants List', tenants_path %>

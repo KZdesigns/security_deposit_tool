@@ -1,0 +1,15 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  property_name: MyString
+  unit_name: MyString
+  tenant_name: MyString
+  security_deposit_amount: MyString
+  security_deposit_type: MyString
+
+two:
+  property_name: MyString
+  unit_name: MyString
+  tenant_name: MyString
+  security_deposit_amount: MyString
+  security_deposit_type: MyString

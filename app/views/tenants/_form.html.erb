@@ -1,0 +1,28 @@
+<%= form_with(model: tenant) do |form| %>
+  <% if tenant.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(tenant.errors.count, "error") %> prohibited this tenant from being saved:</h2>
+
+      <ul>
+        <% tenant.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+
+  <div class="field">
+    <%= form.label :security_deposit_amount %>
+    <%= form.text_field :security_deposit_amount %>
+  </div>
+
+  <div class="field">
+    <%= form.label :security_deposit_type %>
+    <%= form.select :security_deposit_type, ['Management Held', 'Owner Held'] %>
+  </div>
+
+  <div>
+    <%= form.submit class: "btn background text" %>
+  </div>
+<% end %>

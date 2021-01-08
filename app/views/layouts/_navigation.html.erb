@@ -1,0 +1,44 @@
+<nav class="navbar navbar-expand-lg navbar-light background">
+  <a class="navbar-brand" href="#">
+    <%= image_tag("appfolio_logo.png") %>
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+    <form class="form-inline my-3 my-lg-0 ml-auto">
+      <input class="form-control mr-sm-2 home-search" type="search" placeholder="Search" aria-label="Search">
+      <%= button_tag type: :submit, class: "btn text-background" do %>
+          <%= fa_icon 'search 1x' %>
+        <% end %>
+    </form>
+
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Help & Training
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Get Help</a>
+          <a class="dropdown-item" href="#">Visit User Community</a>
+          <a class="dropdown-item" href="#">Make a Suggestion</a>
+        </div>
+      </li>
+    </ul>
+    <ul class="navbar-nav">
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Kyle Zimmerman
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Profile</a>
+          <a class="dropdown-item" href="#">My Settings</a>
+          <a class="dropdown-item" href="#">General Settings</a>
+          <a class="dropdown-item" href="#">Log Out</a>
+        </div>
+      </li>
+    </ul>
+  </div>
+</nav>

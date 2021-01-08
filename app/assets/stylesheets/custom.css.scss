@@ -1,0 +1,43 @@
+@import 'bootstrap/dist/css/bootstrap';
+
+.home-search {
+   width: 1000px !important;
+ }
+
+
+.background {
+  background-color: #006eb7 !important;
+}
+
+.text-background {
+  background-color: #f4f6f8 !important;
+}
+
+.text {
+  color: #f4f6f8 !important;
+}
+
+.dropdown-toggle {
+  color: #f4f6f8 !important;
+}
+
+
+.left-navbar {
+  background-color: #0e2534 !important;
+}
+
+.sidebar {
+ height: 100%;
+ width: 200px;
+ position: fixed;
+ z-index: 1;
+ top: 1;
+ left: 0;
+ background-color: #0e2534;
+ overflow-x: hidden;
+}
+
+.content {
+  margin-left: 200px;
+  padding-left: 20px;
+}
