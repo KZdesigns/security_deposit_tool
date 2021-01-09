@@ -1,5 +1,11 @@
-<p id="notice"><%= notice %></p>
+<div class="container col-12 text-center">
+<p class="alert alert-success mt-2" id="notice"><%= notice %></p>
+</div>
 
+
+<div class="container">
+<div class= "row justify-content-center ml-5 mt-5">
+<div class= "card col-10 text-center">
 <p>
   <strong>Property name:</strong>
   <%= @tenant.property_name %>
@@ -25,5 +31,10 @@
   <%= @tenant.security_deposit_type %>
 </p>
 
-<%= link_to 'Edit', edit_tenant_path(@tenant) %> |
-<%= link_to 'Back to Tenants List', tenants_path %>
+<p>
+<%= link_to 'Edit', edit_tenant_path(@tenant), class: "btn background text" %>
+<%= link_to 'Done', tenants_path, class: "btn background text" %>
+</p>
+</div>
+</div>
+</div>

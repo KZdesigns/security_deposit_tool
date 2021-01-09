@@ -12,17 +12,17 @@
   <% end %>
 
 
-  <div class="field">
+  <div class="field mt-3">
     <%= form.label :security_deposit_amount %>
     <%= form.text_field :security_deposit_amount %>
   </div>
 
-  <div class="field">
+  <div class="field mt-3">
     <%= form.label :security_deposit_type %>
     <%= form.select :security_deposit_type, ['Management Held', 'Owner Held'] %>
   </div>
 
   <div>
-    <%= form.submit class: "btn background text" %>
+    <%= form.submit class: "btn background text mt-3" %>
   </div>
 <% end %>
